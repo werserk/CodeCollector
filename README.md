@@ -32,7 +32,7 @@ To use CodeCollector, you need to have Docker and Docker Compose installed on yo
 2. Build the Docker image:
 
     ```sh
-    docker-compose up --build
+    docker-compose build
     ```
 
 ## Usage
