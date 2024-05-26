@@ -90,7 +90,7 @@ Filepath: my_directory/file2.js
 <code of file2.js>
 ================
 Filepath: another_directory/subdir/file3.py
-<code of file4.py>
+<code of file3.py>
 ================
 Filepath: specific_file.py
 <code of specific_file.py>
