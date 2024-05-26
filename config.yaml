@@ -1,0 +1,13 @@
+paths_to_search:
+  - "./your_directory"
+  - "./another_directory/subdir"
+  - "./specific_file.py"
+file_formats:
+  - .py
+  - .js
+  - .java
+  - .cpp
+ignore_files:
+  - example_to_ignore.py
+ignore_dirs:
+  - dir_to_ignore
