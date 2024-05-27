@@ -25,7 +25,7 @@ To use CodeCollector, you need to have Docker and Docker Compose installed on yo
 1. Clone this repository:
 
     ```sh
-    git clone https://github.com/yourusername/CodeCollector.git
+    git clone https://github.com/werserk/CodeCollector.git
     cd CodeCollector
     ```
 
