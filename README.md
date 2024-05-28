@@ -20,31 +20,46 @@ analysis, refactoring, or documentation.
 
 ## Installation
 
-To use CodeCollector, you need to have Docker and Docker Compose installed on your system.
+To use CodeCollector, you need to have Python.
 
-1. Clone this repository:
+### Clone this repository
 
-    ```sh
-    git clone https://github.com/yourusername/CodeCollector.git
-    cd CodeCollector
-    ```
+```sh
+git clone https://github.com/yourusername/CodeCollector.git
+cd CodeCollector
+```
 
-2. Build the Docker image:
+### Install dependencies using Poetry (recommended):
 
-    ```sh
-    docker-compose up --build
-    ```
+```sh
+poetry install
+```
+
+### Or install dependencies using PIP:
+
+1. Create a virtual environment (optional but recommended):
+
+```sh
+python3 -m venv venv && \
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+```
+
+2. Install dependencies:
+
+```sh
+pip install -r requirements.txt
+```
 
 ## Usage
 
-You can run CodeCollector using Docker Compose with various options to customize the behavior of the tool.
+You can run CodeCollector using Poetry with various options to customize the behavior of the tool.
 
 ### Basic Usage
 
 To collect code from specific directories and files:
 
 ```sh
-docker-compose run code_collector ./your_directory
+poetry run python code_collector.py /path/to/your_directory
 ```
 
 ### Options
@@ -60,11 +75,11 @@ To collect code from multiple directories, including only Python and JavaScript 
 directories, and outputting to a custom file:
 
 ```shell
-docker-compose run code_collector \
-my_directory another_directory specific_file.py \
+poetry run python code_collector.py \
+/path/to/my_directory /path/to/another_directory /path/to/specific_file.py \
 -f .py \
 -f .js \
--i ignore_this.py\
+-i ignore_this.py \
 -i ignore_this_directory \
 -o output.txt
 ```
