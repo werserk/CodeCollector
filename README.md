@@ -24,10 +24,10 @@ To use CodeCollector, you need to have Python.
 
 ### Clone this repository
 
-```sh
-git clone https://github.com/yourusername/CodeCollector.git
-cd CodeCollector
-```
+    ```sh
+    git clone https://github.com/werserk/CodeCollector.git
+    cd CodeCollector
+    ```
 
 ### Install dependencies using Poetry (recommended):
 
@@ -105,7 +105,7 @@ Filepath: my_directory/file2.js
 <code of file2.js>
 ================
 Filepath: another_directory/subdir/file3.py
-<code of file4.py>
+<code of file3.py>
 ================
 Filepath: specific_file.py
 <code of specific_file.py>
