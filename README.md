@@ -76,7 +76,7 @@ directories, and outputting to a custom file:
 
 ```shell
 poetry run python code_collector.py \
-/path/to/my_directory /path/to/another_directory /path/to/specific_file.py \
+my_directory another_directory specific_file.py \
 -f .py \
 -f .js \
 -i ignore_this.py \
