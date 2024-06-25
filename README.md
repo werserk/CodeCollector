@@ -24,10 +24,10 @@ To use CodeCollector, you need to have Python.
 
 ### Clone this repository
 
-    ```sh
-    git clone https://github.com/werserk/CodeCollector.git
-    cd CodeCollector
-    ```
+```sh
+git clone https://github.com/werserk/CodeCollector.git
+cd CodeCollector
+```
 
 ### Install dependencies using Poetry (recommended):
 
