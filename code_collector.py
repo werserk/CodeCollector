@@ -24,7 +24,6 @@ def tree(
     directory: str, prefix: str, ignore_paths: List[str], tree_lines: List[str]
 ) -> None:
     """A recursive function to generate the tree structure."""
-    tree_lines.append(f"{prefix}{os.path.basename(directory)}/")
     prefix += "    "
     items = sorted(os.listdir(directory))
     for index, item in enumerate(items):
@@ -49,6 +48,7 @@ def generate_tree_structure(paths_to_search: List[str], ignore_paths: List[str])
     tree_lines = []
     for path in paths_to_search:
         if os.path.isdir(path):
+            tree_lines.append(os.path.abspath(path) + "/")
             tree(path, "", ignore_paths, tree_lines)
         elif os.path.isfile(path) and not should_ignore(path, ignore_paths):
             tree_lines.append(f"{os.path.basename(path)}")
